@@ -1,0 +1,12 @@
+.header__search {
+  font-size: 1.8rem;
+  display: flex;
+}
+
+@media screen and (max-width: 748px) {
+  .header__search {
+    font-size: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+}

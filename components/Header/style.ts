@@ -4,8 +4,8 @@ import { theme } from '../../styles/theme'
 export const HeaderComponent = styled.div`
   margin: auto;
   display: flex;
-  padding: 20px 15px;
   max-width: 1300px;
+  padding: 10px 20px;
   align-items: center;
   justify-content: space-between;
 
@@ -20,7 +20,43 @@ export const HeaderComponent = styled.div`
     font-size: calc(18 / 16 * 1rem);
   }
 
-  a:last-child {
-    font-size: 1.8rem;
+  @media screen and (max-width: 748px) {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    -webkit-backdrop-filter: blur(5px);
+  }
+`
+
+export const Hamburger = styled.div`
+  display: none;
+  position: relative;
+  @media screen and (max-width: 748px) {
+    display: flex;
+  }
+`
+
+export const ToggleButton = styled.button`
+  display: flex;
+  border: none;
+  font-size: 2rem;
+  padding-left: 30px;
+  color: ${theme.White};
+  background-color: transparent;
+`
+
+export const Menu = styled.div`
+  top: 38px;
+  z-index: 0;
+  width: 101.5vw;
+  right: -30px;
+  position: absolute;
+  background-color: ${theme.Slate_Blue};
+  a {
+    padding: 20px;
+    text-align: center;
+  }
+  a:not(:last-child) {
+    border-bottom: 1px solid ${theme.Tag_Blue};
   }
 `
