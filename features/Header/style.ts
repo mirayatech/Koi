@@ -5,8 +5,8 @@ export const HeaderComponent = styled.div`
   margin: auto;
   display: flex;
   max-width: 1300px;
-  padding: 10px 20px;
-  align-items: center;
+  padding: 20px;
+  align-items: baseline;
   justify-content: space-between;
 
   a {

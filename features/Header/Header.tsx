@@ -10,7 +10,7 @@ import { HeaderComponent, ToggleButton, Hamburger, Menu } from './style'
 
 import { useState } from 'react'
 
-export default function Header() {
+export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const handleOnClick = () => {
