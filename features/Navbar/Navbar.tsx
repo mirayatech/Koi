@@ -11,7 +11,7 @@ export function Navbar() {
         Current Season
       </Link>
       <Link
-        href="/top"
+        href="/top-animes"
         className={router.pathname == '/top-animes' ? styles.active : ''}
       >
         Top Anime
