@@ -2,6 +2,9 @@
 import { AnimeType } from '../../library'
 import { BsDot } from 'react-icons/bs'
 import { Card, Poster } from './style'
+import Link from 'next/link'
+
+import styles from './AnimeCard.module.css'
 
 export type AnimeCardProps = {
   anime: AnimeType
@@ -14,10 +17,14 @@ export function AnimeCard({ anime }: AnimeCardProps) {
   return (
     <Card>
       <Poster>
-        <img src={anime.images.webp.large_image_url} alt="" />
+        <Link href={`/${anime.mal_id}`} className={styles.animeLink}>
+          <img src={anime.images.webp.large_image_url} alt="" />
+        </Link>
       </Poster>
 
-      <h1>{anime.title}</h1>
+      <Link href={`/${anime.mal_id}`} className={styles.animeLink}>
+        {anime.title}
+      </Link>
       <p>
         <span>{season2}</span> <BsDot className="dot__svg" />
         <span>{anime.status}</span>

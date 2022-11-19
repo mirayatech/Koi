@@ -2,22 +2,14 @@ import styled from '@emotion/styled'
 import { theme } from '../../styles/theme'
 
 export const Card = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   border-radius: 2px;
   transition: all 0.2s ease;
 
   :hover {
     background-color: ${theme.Slate_Blue};
-  }
-
-  h1 {
-    width: 16rem;
-    font-weight: 500;
-    padding-top: 15px;
-    word-wrap: break-word;
-    color: ${theme.White};
-    text-transform: uppercase;
-    font-size: calc(18 / 16 * 1rem);
   }
 
   p {
@@ -50,8 +42,9 @@ export const Card = styled.div`
 `
 
 export const Poster = styled.div`
-  width: 16rem;
+  width: 18rem;
   height: 25rem;
+  margin-bottom: 15px;
 
   img {
     border-radius: 2px;

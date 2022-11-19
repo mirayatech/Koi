@@ -1,0 +1,8 @@
+.animeLink {
+  width: 16rem;
+  font-weight: 500;
+  color: var(--white);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  font-size: calc(18 / 16 * 1rem);
+}
