@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from '../../styles/Component.module.css'
 import ClickAwayListener from 'react-click-away-listener'
 
 import { IoSearchOutline } from 'react-icons/io5'
-import { HiBars3, HiOutlineXMark } from 'react-icons/hi2'
 import { HeaderComponent, ToggleButton, Hamburger, Menu } from './style'
 
 import { useState } from 'react'
+
+import styles from './Header.module.css'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -33,7 +33,14 @@ export function Header() {
       </Link>
       <Hamburger>
         <ToggleButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <HiOutlineXMark /> : <HiBars3 />}
+          <div className={styles.toogleButton}>
+            <input className={styles.checkbox} type="checkbox" />
+            <div className={styles.hamburger_lines}>
+              <span className={styles.line}></span>
+              <span className={styles.line}></span>
+              <span className={styles.line}></span>
+            </div>{' '}
+          </div>
         </ToggleButton>
 
         {isMenuOpen && (

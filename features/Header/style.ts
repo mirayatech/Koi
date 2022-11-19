@@ -42,11 +42,11 @@ export const ToggleButton = styled.button`
   font-size: 2rem;
   padding-left: 30px;
   color: ${theme.White};
-  background-color: transparent;
+  position: relative;
 `
 
 export const Menu = styled.div`
-  top: 38px;
+  top: 20px;
   z-index: 0;
   width: 101.5vw;
   right: -30px;
