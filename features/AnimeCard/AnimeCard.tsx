@@ -11,9 +11,6 @@ export type AnimeCardProps = {
 }
 
 export function AnimeCard({ anime }: AnimeCardProps) {
-  const season = anime.season
-  const season2 = season.charAt(0).toUpperCase() + season.slice(1)
-
   return (
     <Card>
       <Poster>
@@ -26,7 +23,7 @@ export function AnimeCard({ anime }: AnimeCardProps) {
         {anime.title}
       </Link>
       <p>
-        <span>{season2}</span> <BsDot className="dot__svg" />
+        <span>{anime?.season}</span> <BsDot className="dot__svg" />
         <span>{anime.status}</span>
       </p>
 
