@@ -1,0 +1,73 @@
+.header__search {
+  font-size: 1.8rem;
+}
+
+.checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: -30px;
+  left: -10px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.hamburger_lines {
+  display: block;
+  height: 20px;
+  width: 32px;
+  position: absolute;
+  top: -25px;
+  left: -5px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger_lines .line {
+  display: block;
+  height: 2px;
+  width: 85%;
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.hamburger_lines .line:first-child {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hamburger_lines .line:nth-child(2) {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger_lines .line:last-child {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+input[type='checkbox']:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+input[type='checkbox']:checked ~ .hamburger_lines .line:first-child {
+  transform: rotate(42deg);
+}
+
+input[type='checkbox']:checked ~ .hamburger_lines .line:nth-child(2) {
+  transform: scaleY(0);
+}
+
+input[type='checkbox']:checked ~ .hamburger_lines .line:last-child {
+  transform: rotate(-42deg);
+}
+
+@media screen and (max-width: 748px) {
+  .header__search {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+}
