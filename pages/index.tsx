@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { AnimeCard } from '../features'
 import { AnimeType, CURRENT_SEASON_URL } from '../library'
 import styles from '../styles/Home.module.css'
+
 export type HomeProps = {
   animes: AnimeType[]
 }

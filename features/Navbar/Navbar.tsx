@@ -12,7 +12,7 @@ export function Navbar() {
       </Link>
       <Link
         href="/top"
-        className={router.pathname == '/top' ? styles.active : ''}
+        className={router.pathname == '/top-animes' ? styles.active : ''}
       >
         Top Anime
       </Link>

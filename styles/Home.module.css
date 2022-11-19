@@ -1,9 +1,35 @@
 .grid {
-  display: grid;
   gap: 1rem 0;
+  display: grid;
   margin: 50px 0;
   padding: 0 30px;
   align-items: baseline;
   justify-content: space-between;
   grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 1330px) {
+  .grid {
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    justify-content: space-evenly;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .grid {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .grid {
+    grid-template-columns: auto;
+  }
 }
