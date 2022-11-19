@@ -11,7 +11,7 @@ export type AnimeType = {
   score: number
   synopsis: string
   status: string
-
+  rating: string
   studios: [{ name: string; mal_id: number }]
   genres: [
     {
