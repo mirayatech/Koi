@@ -47,7 +47,7 @@ export function Header() {
               <Link href="/" onClick={handleOnClick}>
                 Current Season
               </Link>
-              <Link href="/top" onClick={handleOnClick}>
+              <Link href="/top-animes" onClick={handleOnClick}>
                 Top Anime
               </Link>
               <Link href="/search" onClick={handleOnClick}>
