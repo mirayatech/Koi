@@ -14,7 +14,6 @@ export const Card = styled.div`
     width: 16rem;
     font-weight: 500;
     padding-top: 15px;
-    letter-spacing: 1px;
     word-wrap: break-word;
     color: ${theme.White};
     text-transform: uppercase;
