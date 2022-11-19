@@ -4,8 +4,8 @@ import { theme } from '../../styles/theme'
 export const HeaderComponent = styled.div`
   margin: auto;
   display: flex;
-  max-width: 1300px;
   padding: 20px;
+  max-width: 1300px;
   align-items: baseline;
   justify-content: space-between;
 
@@ -24,6 +24,8 @@ export const HeaderComponent = styled.div`
     width: 100%;
     z-index: 100;
     position: fixed;
+    backdrop-filter: blur(8px);
+    background-color: #0f172a56;
     -webkit-backdrop-filter: blur(5px);
   }
 `
@@ -41,19 +43,19 @@ export const ToggleButton = styled.button`
   border: none;
   font-size: 2rem;
   padding-left: 30px;
-  color: ${theme.White};
   position: relative;
+  color: ${theme.White};
 `
 
 export const Menu = styled.div`
   top: 20px;
   z-index: 0;
-  width: 101.5vw;
   right: -30px;
+  width: 101.5vw;
   position: absolute;
   background-color: ${theme.Slate_Blue};
   a {
-    padding: 20px;
+    padding: 20px 40px;
     text-align: center;
   }
   a:not(:last-child) {

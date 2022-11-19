@@ -33,14 +33,12 @@ export function Header() {
       </Link>
       <Hamburger>
         <ToggleButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <div className={styles.toogleButton}>
-            <input className={styles.checkbox} type="checkbox" />
-            <div className={styles.hamburger_lines}>
-              <span className={styles.line}></span>
-              <span className={styles.line}></span>
-              <span className={styles.line}></span>
-            </div>{' '}
-          </div>
+          <input className={styles.checkbox} type="checkbox" />
+          <div className={styles.hamburger_lines}>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+          </div>{' '}
         </ToggleButton>
 
         {isMenuOpen && (
