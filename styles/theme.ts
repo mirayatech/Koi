@@ -1,6 +1,6 @@
 export const theme = {
   White: '#fff',
-  Blue: '#4d97ff;',
+  Blue: '#4288ea',
   Navy_Blue: '#0f172a',
   Slate_Blue: '#1e293b',
   Tag_Blue: '#334155',

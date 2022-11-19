@@ -1,0 +1,23 @@
+.PosterOverlay {
+  top: 0;
+  opacity: 0;
+  width: 17rem;
+  height: 25rem;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(#00000030, #00000030);
+}
+
+.PosterOverlay:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 748px) {
+  .PosterOverlay {
+    display: none;
+  }
+}

@@ -17,7 +17,7 @@ export default function NotFound() {
 }
 
 const Container = styled.div`
-  height: 94vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
