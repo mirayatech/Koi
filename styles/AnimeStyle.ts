@@ -139,6 +139,10 @@ export const Status = styled.div`
     flex-wrap: wrap;
     list-style: none;
     padding-bottom: 30px;
+
+    @media screen and (max-width: 748px) {
+      padding-bottom: 0;
+    }
   }
 
   li {
