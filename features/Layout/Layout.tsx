@@ -1,5 +1,4 @@
-import { Header } from '../Header/Header'
-import { Navbar } from '../Navbar/Navbar'
+import { Footer, Header, Navbar } from '..'
 import { Container } from './style'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -10,6 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Container>
         <main>{children}</main>
       </Container>
+      <Footer />
     </>
   )
 }
