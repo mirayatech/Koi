@@ -205,3 +205,22 @@ export const SecondaryContainer = styled.div`
     }
   }
 `
+
+export const MobileButton = styled.button`
+  border: none;
+  display: flex;
+  padding: 10px;
+  font-weight: 600;
+  margin-top: 30px;
+  border-radius: 3px;
+  align-items: center;
+  font-size: 0.92rem;
+
+  .play__svg {
+    margin-right: 3px;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 748px) {
+    display: none;
+  }
+`

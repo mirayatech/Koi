@@ -12,6 +12,7 @@ import {
   Relative,
   Poster,
   SecondaryContainer,
+  MobileButton,
 } from '../styles/AnimeStyle'
 
 type AnimeProps = {
@@ -43,9 +44,7 @@ export default function Anime({ anime }: AnimeProps) {
 
             <span>{anime.rating}</span>
           </p>
-
           <h1>{anime.title}</h1>
-
           <Genre>
             {anime.genres.map((genre) => (
               <li key={genre.mal_id}>{genre.name}</li>
@@ -54,7 +53,6 @@ export default function Anime({ anime }: AnimeProps) {
               <li key={theme.mal_id}>{theme.name}</li>
             ))}
           </Genre>
-
           <Status>
             <p>Status</p>
 
@@ -66,7 +64,10 @@ export default function Anime({ anime }: AnimeProps) {
                 <TiHeart className="heart__svg" /> {anime.favorites}
               </li>
             </ul>
-          </Status>
+          </Status>{' '}
+          <MobileButton aria-label="watch trailer">
+            <BsPlayFill className="play__svg" /> Watch Trailer
+          </MobileButton>
         </AnimeInfo>
       </PrimaryContainer>
 
