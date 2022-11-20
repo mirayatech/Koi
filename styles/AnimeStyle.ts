@@ -1,6 +1,37 @@
 import styled from '@emotion/styled'
 import { theme } from './theme'
 
+export const CloseButton = styled.button`
+  top: 30px;
+  right: 30px;
+  border: none;
+  color: ${theme.White};
+  font-size: 2rem;
+  position: absolute;
+  background-color: transparent;
+`
+
+export const Overlay = styled.div`
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000001;
+  backdrop-filter: blur(5px);
+`
+
+export const Video = styled.iframe`
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+`
+
 export const Section = styled.div`
   display: flex;
   margin: 50px 0;
@@ -217,8 +248,8 @@ export const MobileButton = styled.button`
   font-size: 0.92rem;
 
   .play__svg {
-    margin-right: 3px;
     font-size: 1rem;
+    margin-right: 3px;
   }
   @media screen and (min-width: 748px) {
     display: none;
