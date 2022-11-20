@@ -24,13 +24,6 @@ export function Header() {
         <span>KOI</span>
       </Link>
 
-      <Link
-        href="/search"
-        aria-label="search"
-        className={styles.header__search}
-      >
-        <IoSearchOutline />
-      </Link>
       <Hamburger>
         <ToggleButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <input className={styles.checkbox} type="checkbox" />
@@ -49,9 +42,6 @@ export function Header() {
               </Link>
               <Link href="/top-animes" onClick={handleOnClick}>
                 Top Anime
-              </Link>
-              <Link href="/search" onClick={handleOnClick}>
-                Search
               </Link>
             </Menu>
           </ClickAwayListener>

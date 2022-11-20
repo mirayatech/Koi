@@ -6,8 +6,8 @@ export const HeaderComponent = styled.div`
   display: flex;
   padding: 20px;
   max-width: 1300px;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 
   a {
     display: flex;
@@ -18,6 +18,10 @@ export const HeaderComponent = styled.div`
   a span {
     padding-left: 5px;
     font-size: calc(18 / 16 * 1rem);
+
+    @media screen and (max-width: 748px) {
+      font-size: calc(20 / 16 * 1rem);
+    }
   }
 
   @media screen and (max-width: 748px) {
@@ -27,6 +31,9 @@ export const HeaderComponent = styled.div`
     backdrop-filter: blur(8px);
     background-color: #0f172a56;
     -webkit-backdrop-filter: blur(5px);
+    align-items: baseline;
+
+    justify-content: space-between;
   }
 `
 
@@ -51,7 +58,7 @@ export const Menu = styled.div`
   top: 20px;
   z-index: 0;
   right: -30px;
-  width: 101.5vw;
+  width: 103vw;
   position: absolute;
   background-color: ${theme.Slate_Blue};
   a {
