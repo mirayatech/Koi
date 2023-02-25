@@ -4,7 +4,7 @@ The whole point of this project is to learn how Next.js works. Therefore, the pr
 ### 🛠️ - Main technologies 
 `Next.js` &nbsp;`Jikan API` &nbsp;`TypeScript` &nbsp;`CSS`  &nbsp;`Styled Components` 
 
-<br>
+<br>  
 
 ### 📚 - What I've learned 
 
